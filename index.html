@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="icon" href="https://aliphia.com/wp-content/uploads/2016/09/Update-1.1.9.jpg">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+
+
+ 
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control" id="productName">
+        </div>
+        <div class="form-group">
+            <label for="productPrice">Product price</label>
+            <input type="number" class="form-control" id="productPrice">
+        </div>
+        <div class="form-group">
+            <label for="productCategory">Product category</label>
+            <input type="text" class="form-control" id="productCategory">
+        </div>
+        <div class="form-group">
+            <label for="productDesc">Product description</label>
+            <textarea type="text" class="form-control" id="productDesc">
+                </textarea>
+        </div>
+
+        <button class="btn btn-primary" onclick="addProduct()" id="mybtn">Add Product</button>
+
+    </div>
+    <div class="container">
+
+        <input type="text" placeholder="search......" onkeyup="search(this.value)" class="form-control w-75 m-auto">
+
+        <table class="table mt-5 table-striped">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDescription</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tabelbody">
+              
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
